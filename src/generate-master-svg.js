@@ -76,8 +76,7 @@ const masterSVG = `
       ${identity}
     </g>
     <g class="body-text">
-      <text x="80" y="160" fill="#ffffff" font-family="monospace" font-size="16">Hi, I'm Harrison Tran</text>
-      <text x="100" y="180" fill="#aaaaaa" font-family="monospace" font-size="14">> Full-Stack Developer</text>
+      <text x="80" y="270" fill="#ffffff" font-family="monospace" font-size="16">Hi! I'm Harrison Tran</text>
     </g>
   </g>
 
@@ -86,7 +85,7 @@ const masterSVG = `
       ${projects}
     </g>
     <g class="body-text">
-      <text x="10" y="85" fill="#ffffff" font-family="monospace" font-size="16">Featured Projects:</text>
+      <text x="20" y="260" fill="#ffffff" font-family="monospace" font-size="16">Featured Projects:</text>
     </g>
   </g>
 
