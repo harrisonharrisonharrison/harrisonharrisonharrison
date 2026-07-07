@@ -1,10 +1,12 @@
 const fs = require('fs');
 
+// 1. Load all assets, including the new Lightbulb
 const grass = fs.readFileSync('./assets/grass.svg', 'utf8');
 const identity = fs.readFileSync('./assets/identity.svg', 'utf8');
 const projects = fs.readFileSync('./assets/projects.svg', 'utf8');
 const statistics = fs.readFileSync('./assets/statistics.svg', 'utf8');
 const contact = fs.readFileSync('./assets/contact.svg', 'utf8');
+const lightbulb = fs.readFileSync('./assets/Lightbulb.svg', 'utf8');
 
 const svgCSS = `
   <style>
@@ -25,7 +27,7 @@ const svgCSS = `
       transition: opacity 0.4s ease-in-out;
     }
 
-    /* Hover States - Triggered when hovering over the zone */
+    /* Hover States - Triggered when hovering over individual zones */
     .asset-zone:hover .bg-asset {
       opacity: 1.0;
     }
@@ -34,7 +36,20 @@ const svgCSS = `
       opacity: 1.0;
     }
 
-    /* Reveal All Button Logic (Optional implementation later) */
+    /* Lightbulb Reveal Trigger */
+    .reveal-all {
+      cursor: pointer;
+      transition: filter 0.3s ease;
+      opacity: 0.2;
+    }
+    
+    /* Optional: Make the lightbulb itself glow when hovered */
+    .reveal-all:hover {
+      filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
+      opacity:1.0;
+    }
+
+    /* Reveal All Logic - Targets all following .asset-zone siblings */
     .reveal-all:hover ~ .asset-zone .bg-asset,
     .reveal-all:hover ~ .asset-zone .body-text {
       opacity: 1.0;
@@ -50,6 +65,10 @@ const masterSVG = `
 
   <g transform="translate(0, 359)">
     ${grass}
+  </g>
+
+  <g class="reveal-all" transform="translate(353, 0)">
+    ${lightbulb}
   </g>
 
   <g class="asset-zone" transform="translate(0, 0)">
