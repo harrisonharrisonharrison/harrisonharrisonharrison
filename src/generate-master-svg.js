@@ -58,12 +58,12 @@ const svgCSS = `
 `;
 
 const masterSVG = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 646" width="800" height="646">
   ${svgCSS}
   
   <rect width="100%" height="100%" fill="#2b2b2b" />
 
-  <g transform="translate(0, 359)">
+  <g transform="translate(0, 498)">
     ${grass}
   </g>
 
@@ -81,7 +81,7 @@ const masterSVG = `
     </g>
   </g>
 
-  <g class="asset-zone" transform="translate(389, 0)">
+  <g class="asset-zone" transform="translate(461, 27)">
     <g class="bg-asset">
       ${projects}
     </g>
@@ -90,7 +90,7 @@ const masterSVG = `
     </g>
   </g>
 
-  <g class="asset-zone" transform="translate(520, 199)">
+  <g class="asset-zone" transform="translate(520, 348)">
     <g class="bg-asset">
       ${statistics}
     </g>
@@ -99,7 +99,7 @@ const masterSVG = `
     </g>
   </g>
 
-  <g class="asset-zone" transform="translate(113, 350)">
+  <g class="asset-zone" transform="translate(113, 484)">
     <g class="bg-asset">
       ${contact}
     </g>
