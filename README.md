@@ -1,1 +1,1 @@
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=harrisonharrisonharrison&show_icons=true&theme=dark&hide=stars&rank_icon=github&show=prs_merged&custom_title=harrisonharrisonharrison's+Stats)](https://github.com/anuraghazra/github-readme-stats)
+<img src="fog-of-war.svg" alt="Interactive Portfolio">
