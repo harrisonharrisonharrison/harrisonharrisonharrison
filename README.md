@@ -6,5 +6,5 @@
   <a href="https://github.com/harrisonharrisonharrison"><img src="assets/Projects.png" width="24%" align="right" alt="Go East"></a>
 
   <!-- Center Stack (50%) -->
-  <a href="https://github.com/harrisonharrisonharrison"><img src="assets/Identity.png" width="49%" alt="Identity Chamber"></a><a href="https://github.com/harrisonharrisonharrison"><img src="assets/Contact.png" width="50%" alt="Contact Chamber"></a>
+  <a href="https://github.com/harrisonharrisonharrison"><img src="assets/Identity.png" width="49%" alt="Identity Chamber"></a><a href="https://github.com/harrisonharrisonharrison"><img src="assets/Contact.png" width="49%" alt="Contact Chamber"></a>
 </p>
