@@ -4,7 +4,7 @@
       <!-- LEFT ARROW -->
       <td rowspan="2" align="center" valign="middle">
         <a href="https://github.com/harrisonharrisonharrison">
-          <img src="assets/arrow-left.png" width="100" alt="Go West">
+          <img src="assets/arrow-left.png" width="294" alt="Go West">
         </a>
       </td>
       <!-- Identity -->
@@ -16,7 +16,7 @@
       <!-- RIGHT ARROW -->
       <td rowspan="2" align="center" valign="middle">
         <a href="https://github.com/harrisonharrisonharrison">
-          <img src="assets/arrow-right.png" width="100" alt="Go East">
+          <img src="assets/arrow-right.png" width="294" alt="Go East">
         </a>
       </td>
     </tr>
