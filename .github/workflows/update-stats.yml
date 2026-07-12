@@ -33,4 +33,5 @@ jobs:
         git config --global user.email "bot@github.com"
         git add assets/Statistics_Live.png
         git diff-index --quiet HEAD || git commit -m "Bot: Discovered updated ledger stats"
+        git pull --rebase origin main
         git push
