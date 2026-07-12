@@ -16,11 +16,8 @@ font_path = "./pixel_font.ttf"
 font_title = ImageFont.truetype(font_path, 24)
 font_body = ImageFont.truetype(font_path, 16)
 
-# 3. Draw the retro text onto the brick wall
-draw.text((50, 50), "HARRISONHARRISONHARRISON'S GITHUB STATS", fill=(255, 0, 0), font=font_title) # Red text
-draw.text((50, 100), f"> REPOS FOUND: {public_repos}", fill=(255, 255, 255), font=font_body)
-draw.text((50, 130), f"> PARTY SIZE:  {followers} FOLLOWER(S)", fill=(255, 255, 255), font=font_body)
+draw.text((141, 110), "HARRISON'S GITHUB STATS", fill=(255, 0, 0), font=font_title) # Red text
+draw.text((70, 160), f"> REPOS FOUND: {public_repos}", fill=(255, 255, 255), font=font_body)
+draw.text((70, 190), f"> PARTY SIZE:  {followers} FOLLOWER(S)", fill=(255, 255, 255), font=font_body)
 
-# 4. Save over the live file that your CHAMBER_STATS.md links to
 image.save("./assets/Statistics_Live.png")
-print("Successfully baked live stats into the pixel-art grid!")
