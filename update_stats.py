@@ -18,7 +18,7 @@ query($login: String!) {
     contributionsCollection { totalCommitContributions }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: {field: PUSHED_AT, direction: DESC}) {
       nodes {
-        languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
+        languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges {
             size
             node { name }
@@ -53,7 +53,7 @@ for repo in data["repositories"]["nodes"]:
     for edge in repo["languages"]["edges"]:
         language_sizes[edge["node"]["name"]] += edge["size"]
 
-top_languages = sorted(language_sizes.items(), key=lambda x: x[1], reverse=True)[:3]
+top_languages = sorted(language_sizes.items(), key=lambda x: x[1], reverse=True)[3:6]
 top_language_names = [lang[0] for lang in top_languages]
 
 image = Image.open("./assets/StatisticsMain.png")
@@ -83,7 +83,10 @@ draw.text((title_x, current_y), "HARRISON'S GITHUB STATS", fill=COLOR_RED, font=
 current_y += 50
 
 # Stats
-draw_stat(draw, start_x, current_y, "> PARTY SIZE: ", f"{followers} FOLLOWER(S)", font_body)
+draw_stat(draw, start_x, current_y, "> PARTY SIZE: ", f"{followers} FOLLOWERS", font_body)
+key_length = draw.textlength("> PARTY SIZE: ", font=font_body)
+followers_length = draw.textlength(f"{followers} FOLLOWERS", font=font_body)
+draw.text((start_x + 5 + key_length + followers_length, current_y), '(please follow me)', fill=COLOR_WHITE, font=font_body)
 current_y += line_height
 
 draw_stat(draw, start_x, current_y, "> REPOSITORIES CONTRIBUTED TO (PAST YEAR): ", repos_contributed, font_body)
