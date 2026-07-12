@@ -86,7 +86,7 @@ current_y += 50
 draw_stat(draw, start_x, current_y, "> PARTY SIZE: ", f"{followers} FOLLOWERS", font_body)
 key_length = draw.textlength("> PARTY SIZE: ", font=font_body)
 followers_length = draw.textlength(f"{followers} FOLLOWERS", font=font_body)
-draw.text((start_x + 5 + key_length + followers_length, current_y), '(please follow me)', fill=COLOR_WHITE, font=font_body)
+draw.text((start_x + 5 + key_length + followers_length, current_y), '(click back and follow me!)', fill=COLOR_WHITE, font=font_body)
 current_y += line_height
 
 draw_stat(draw, start_x, current_y, "> REPOSITORIES CONTRIBUTED TO (PAST YEAR): ", repos_contributed, font_body)
